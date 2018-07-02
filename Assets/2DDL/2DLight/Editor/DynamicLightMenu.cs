@@ -205,7 +205,7 @@ public class DynamicLightMenu : Editor {
 		//if(light){
 			int layerDest = AssetUtility.LoadPropertyAsInt("layerCaster", tmpAsset);//light.getLayerNumberFromLayerMask(light.Layer.value);
 			hex.layer = layerDest;
-			hex.transform.FindChild("collider").gameObject.layer = layerDest;
+			hex.transform.Find("collider").gameObject.layer = layerDest;
 		//}
 		hex.transform.position = new Vector3(5,0,0);
 		hex.name = "Circle";
@@ -239,7 +239,7 @@ public class DynamicLightMenu : Editor {
 		if(light){
 			int layerDest =  AssetUtility.LoadPropertyAsInt("layerCaster", tmpAsset);
 			hex.layer = layerDest;
-			hex.transform.FindChild("collider").gameObject.layer = layerDest;
+			hex.transform.Find("collider").gameObject.layer = layerDest;
 		}
 		hex.transform.position = new Vector3(5,0,0);
 		hex.name = "Circle - Intellider";
@@ -284,7 +284,7 @@ public class DynamicLightMenu : Editor {
 		//if(light){
 			int layerDest = AssetUtility.LoadPropertyAsInt("layerCaster", tmpAsset);
 			hex.layer = layerDest;
-			hex.transform.FindChild("collider").gameObject.layer = layerDest;
+			hex.transform.Find("collider").gameObject.layer = layerDest;
 		//}
 		hex.transform.position = new Vector3(5,0,0);
 		hex.name = "Hexagon";
